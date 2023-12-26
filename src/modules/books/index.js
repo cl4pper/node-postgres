@@ -1,4 +1,4 @@
-const BooksRoutes = require('./routes');
+const BooksRoutes = require("./routes");
 
 module.exports = {
   BooksRoutes,

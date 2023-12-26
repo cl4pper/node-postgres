@@ -1,7 +1,7 @@
-const pool = require('../../../db.config');
+const pool = require("../../../db.config");
 
 async function selectBooks() {
-  return await pool.query('SELECT * FROM books');;
+  return await pool.query("SELECT * FROM books");
 }
 
 async function selectBookById(id) {
@@ -10,7 +10,10 @@ async function selectBookById(id) {
 
 async function createBook(data) {
   const { title, author } = data;
-  await pool.query('INSERT INTO books (title, author) VALUES ($1, $2)', [title, author]);
+  await pool.query("INSERT INTO books (title, author) VALUES ($1, $2)", [
+    title,
+    author,
+  ]);
 }
 
 async function deleteBook(id) {
@@ -27,5 +30,5 @@ module.exports = {
   selectBookById,
   createBook,
   deleteBook,
-  deleteAllBooks
-}
+  deleteAllBooks,
+};
