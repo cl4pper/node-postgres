@@ -1,6 +1,5 @@
 {
 	"testRegex": "((\\.|/*.)(test))\\.js?$",
-	"testEnvironment": "jsdom",
 	"collectCoverage": true,
 	"collectCoverageFrom": [
 		"src/{tests}/**/*.js",
