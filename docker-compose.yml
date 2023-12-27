@@ -3,8 +3,8 @@ version: '3.8'
 services:
   # name the Database service after the $DATABASE_HOST
   database:
-    container_name: postgres-database
-    image: postgres
+    container_name: $DATABASE_CONTAINER_NAME
+    image: $DATABASE_IMAGE
     restart: always
     env_file: .env
     environment:
@@ -17,8 +17,8 @@ services:
       - $DATABASE_LOCAL_PORT:$DATABASE_DOCKER_PORT
 
   server:
-    container_name: node-postgres-api
-    image: node
+    container_name: $SERVER_CONTAINER_NAME
+    image: $SERVER_IMAGE
     depends_on:
       database:
         condition: service_started
