@@ -1,0 +1,12 @@
+{
+	"testRegex": "((\\.|/*.)(test))\\.js?$",
+	"testEnvironment": "jsdom",
+	"collectCoverage": true,
+	"collectCoverageFrom": [
+		"src/{tests}/**/*.js",
+		"!src/{tests, modules}/index.{js}"
+	],
+	"moduleNameMapper": {
+		"@modules": "<rootDir>/src/modules"
+	}
+}
