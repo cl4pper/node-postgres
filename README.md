@@ -1,4 +1,4 @@
-# node-postgres
+# node-postgres [![CI](https://github.com/cl4pper/node-postgres/actions/workflows/integration.yaml/badge.svg)](https://github.com/cl4pper/node-postgres/actions/workflows/integration.yaml)
 
 A Node based boilerplate to help you starting your API development :smiley:
 
